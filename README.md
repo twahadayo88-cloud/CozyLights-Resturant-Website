@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🍽️ Sakura Royale
 
-# Run and deploy your AI Studio app
+Sakura Royale is a modern luxury restaurant website crafted to deliver an elegant and immersive digital dining experience through premium design, smooth user interactions, and responsive performance.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/2c47888b-3ce8-4ae1-8f2a-b6bcd059103b
+- Modern Luxury UI/UX
+- Fully Responsive Design
+- Interactive Digital Menu
+- Online Table Reservation System
+- Chef's Special Showcase
+- Customer Testimonials
+- Restaurant Gallery
+- Smooth Animations & Transitions
+- Mobile-Friendly Experience
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+- React
+- JavaScript / TypeScript
+- Tailwind CSS
+- Framer Motion
+- Modern Frontend Development Practices
 
+## 🎯 Purpose
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Built to showcase modern frontend development, responsive web design, user experience principles, and business-oriented web solutions through a premium restaurant website.
+
+## 🚀 Live Demo
+
+https://sakura-royale-224208586797.asia-southeast1.run.app
+
+## 📌 Author
+
+Arnav Sharma
+Computer Science Engineering (Artificial Intelligence)
+
+Passionate about AI, Software Development, Cybersecurity, and creating impactful digital experiences.
