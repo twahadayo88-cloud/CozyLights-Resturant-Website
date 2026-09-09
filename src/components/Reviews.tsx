@@ -26,16 +26,16 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section id="reviews" className="py-24 bg-[#081120]/40 relative border-t border-[#F9F5EE]/10 overflow-hidden">
+    <section id="reviews" className="py-24 bg-[#1A1A1D]/40 relative border-t border-[#F9F5EE]/10 overflow-hidden">
       {/* Background aesthetic decorative blurs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#6D0F24]/3 rounded-full blur-[110px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-[#6F2232]/3 rounded-full blur-[110px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-yellow-500 font-serif tracking-[4px] text-[10px] uppercase block mb-3 italic">Patron Testimony</span>
+          <span className="text-[#C3073F] font-serif tracking-[4px] text-[10px] uppercase block mb-3 italic">Patron Testimony</span>
           <h2 className="text-4xl md:text-5xl font-serif text-white uppercase leading-[1.1]">
-            Chronicles of <span className="text-yellow-500 font-serif italic normal-case tracking-normal">Exquisite Patronage</span>
+            Chronicles of <span className="text-[#C3073F] font-serif italic normal-case tracking-normal">Exquisite Patronage</span>
           </h2>
           <p className="text-neutral-400 max-w-xl mx-auto mt-4 text-xs leading-relaxed opacity-80">
             Read critical notes shared by our Michelin reviewers, culinary historians, and distinguished collectors of high culinary art.
@@ -43,14 +43,14 @@ export default function Reviews() {
         </div>
 
         {/* Carousel Container */}
-        <div className="max-w-4xl mx-auto relative bg-[#0A0A0A] border border-[#F9F5EE]/10 rounded-none p-8 md:p-12 shadow-2xl backdrop-blur-md">
+        <div className="max-w-4xl mx-auto relative bg-[#1A1A1D] border border-[#F9F5EE]/10 rounded-none p-8 md:p-12 shadow-2xl backdrop-blur-md">
           {/* Quote logo backdrop */}
-          <Quote className="absolute top-6 right-8 w-24 h-24 text-neutral-800/15 pointer-events-none" />
+          <Quote className="absolute top-6 right-8 w-24 h-24 text-[#4E4E50]/15 pointer-events-none" />
 
           {/* Review sliding block */}
           <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center justify-between text-left">
             {/* Patron Portrait */}
-            <div className="w-24 h-24 md:w-32 md:h-32 rounded-none border border-yellow-500/30 overflow-hidden shrink-0 shadow-lg select-none">
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-none border border-[#C3073F]/30 overflow-hidden shrink-0 shadow-lg select-none">
               <img
                 src={REVIEWS_LIST[activeIdx].avatarUrl}
                 alt={REVIEWS_LIST[activeIdx].name}
@@ -62,9 +62,9 @@ export default function Reviews() {
             {/* Critique Specs */}
             <div className="space-y-4 flex-grow">
               {/* Star group */}
-              <div className="flex gap-1 text-yellow-500">
+              <div className="flex gap-1 text-[#C3073F]">
                 {[...Array(REVIEWS_LIST[activeIdx].rating)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-yellow-500 text-yellow-500" />
+                  <Star key={i} className="w-3.5 h-3.5 fill-[#C3073F] text-[#C3073F]" />
                 ))}
               </div>
 
@@ -83,7 +83,7 @@ export default function Reviews() {
                     {REVIEWS_LIST[activeIdx].role}
                   </span>
                 </div>
-                <span className="text-[8px] font-mono text-yellow-500/80 bg-yellow-500/5 px-2.5 py-0.5 rounded-none border border-yellow-500/20">
+                <span className="text-[8px] font-mono text-[#C3073F]/80 bg-[#C3073F]/5 px-2.5 py-0.5 rounded-none border border-[#C3073F]/20">
                   {REVIEWS_LIST[activeIdx].date}
                 </span>
               </div>
@@ -99,7 +99,7 @@ export default function Reviews() {
                   key={i}
                   onClick={() => setActiveIdx(i)}
                   className={`w-2 h-2 rounded-none transition-all duration-300 cursor-pointer ${
-                    activeIdx === i ? "bg-yellow-500 w-5" : "bg-neutral-800 hover:bg-neutral-600"
+                    activeIdx === i ? "bg-[#C3073F] w-5" : "bg-[#4E4E50] hover:bg-[#950740]"
                   }`}
                   aria-label={`Go to slide ${i + 1}`}
                 />
@@ -109,14 +109,14 @@ export default function Reviews() {
             <div className="flex gap-3">
               <button
                 onClick={handlePrev}
-                className="p-2.5 border border-[#F9F5EE]/10 hover:border-yellow-500/30 hover:bg-neutral-900 rounded-none text-white transition-colors cursor-pointer"
+                className="p-2.5 border border-[#F9F5EE]/10 hover:border-[#C3073F]/30 hover:bg-[#4E4E50] rounded-none text-white transition-colors cursor-pointer"
                 aria-label="Previous Review"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
               <button
                 onClick={handleNext}
-                className="p-2.5 border border-[#F9F5EE]/10 hover:border-yellow-500/30 hover:bg-neutral-900 rounded-none text-white transition-colors cursor-pointer"
+                className="p-2.5 border border-[#F9F5EE]/10 hover:border-[#C3073F]/30 hover:bg-[#4E4E50] rounded-none text-white transition-colors cursor-pointer"
                 aria-label="Next Review"
               >
                 <ChevronRight className="w-4 h-4" />

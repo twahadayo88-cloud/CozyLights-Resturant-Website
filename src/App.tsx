@@ -18,9 +18,9 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="relative text-[#F9F5EE] bg-[#0A0A0A] font-sans antialiased selection:bg-yellow-500/30 selection:text-white">
+    <div className="relative text-[#F9F5EE] bg-[#1A1A1D] font-sans antialiased selection:bg-[#C3073F]/30 selection:text-white">
       {/* 1. Global Subtle Mouse Follow Spotlight Effect Overlay (Adds ambient luxury) */}
-      <div className="absolute inset-0 bg-[#0A0A0A] pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-[#1A1A1D] pointer-events-none z-0" />
 
       {/* 2. Premium Sticky Glassmorphism Header Menu */}
       <Navbar />

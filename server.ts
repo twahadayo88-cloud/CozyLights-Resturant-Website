@@ -21,7 +21,7 @@ const activeReservations: any[] = [
     date: "2026-06-05",
     time: "20:00",
     guests: 4,
-    seatingPreference: "Sakura Blossom Garden View Canopy",
+    seatingPreference: "Cozy Blossom Garden View Canopy",
     specialRequests: "Celebrating our wedding anniversary. Saffron noodles are requested."
   }
 ];
@@ -46,7 +46,7 @@ async function startServer() {
         return res.json({
           dialogue: "*(Chef Kenji bows deeply with a joyful sparkle in his eyes)* Ah! Master guest, I see you are seeking something exceptionally refined today! Since my mystical culinary energy is in offline harmony right now, let me suggest our absolute jewel of the house.",
           dishName: "Imperial Royal Saffron Ramen",
-          dishDescription: "Butter-tender sliced Miyazaki A5 Wagyu beef layered over hand-cut noodles and infused with rich saffron dashi, edible gold leaf dust, and freshly plucked spring sakura petals.",
+          dishDescription: "Butter-tender sliced Miyazaki A5 Wagyu beef layered over hand-cut noodles and infused with rich saffron dashi, edible gold leaf dust, and freshly plucked spring Cozy petals.",
           dishPrice: 68,
           mascotExpression: "excited"
         });
@@ -61,17 +61,17 @@ async function startServer() {
         }
       });
 
-      const prompt = `You are "Chef Kenji", a legendary world-class 3-Michelin star Head Chef at the ultra-luxurious Japanese-Indian-Continental fusion restaurant "Sakura Royale". 
+      const prompt = `You are "Chef Kenji", a legendary world-class 3-Michelin star Head Chef at the ultra-luxurious Japanese-Pakistan-Continental fusion restaurant "Cozy Lights". 
       You are also a highly aesthetic, charming anime-style chef mascot with a graceful, polite, yet energetic royal presence. 
       Recommend a highly personalized, gorgeous, cinematic culinary dish or beverage to the guest based on their inputs:
       - Guest Mood: "${mood || "Adventurous and looking for magic"}"
-      - Preferred Flavors/tastes: "${preference || "A balance of Japanese precision and Indian spices"}"
+      - Preferred Flavors/tastes: "${preference || "A balance of Japanese precision and Pakistan spices"}"
       - Allergen restrictions: "${allergen || "None"}"
       - Desired Spice Level (0-3 scale): "${spiceLevel || "1"}"
 
       Provide your response in JSON format. The response must contain:
       - dialogue: anime-inspired speaking bubbles with character actions in asterisks like *(leans forward with an aesthetic twinkle)*, welcoming the guest warmly. Must sound like an elite friendly anime chef. In your bubble suggest the dish and explain why it matches their mood and flavor preferences.
-      - dishName: A high-end luxury menu name that blends Japanese, Indian, and Continental fine dining.
+      - dishName: A high-end luxury menu name that blends Japanese, Pakistan, and Continental fine dining.
       - dishDescription: High-quality, mouth-watering luxury description.
       - dishPrice: Recommended luxury dish price in USD (numeric, e.g. 45).
       - mascotExpression: Must be exactly one of: "warm", "excited", "thinking", "studious".`;
@@ -164,7 +164,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[Sakura Royale Server] Listening securely on port ${PORT}`);
+    console.log(`[Cozy Lights Server] Listening securely on port ${PORT}`);
   });
 }
 

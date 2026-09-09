@@ -1,6 +1,6 @@
 {
-  "name": "Sakura Royale",
-  "description": "A luxury fusion restaurant combining Japanese, Indian, and Continental cuisine with a royal anime-inspired atmosphere.",
+  "name": "Cozy Lights",
+  "description": "A luxury fusion restaurant combining Japanese, Pakistan, and Continental cuisine with a royal anime-inspired atmosphere.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

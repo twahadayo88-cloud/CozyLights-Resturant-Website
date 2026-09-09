@@ -1,6 +1,6 @@
-# 🍽️ Sakura Royale
+# 🍽️ Cozy Lights
 
-Sakura Royale is a modern luxury restaurant website crafted to deliver an elegant and immersive digital dining experience through premium design, smooth user interactions, and responsive performance.
+Cozy Lights is a modern luxury restaurant website crafted to deliver an elegant and immersive digital dining experience through premium design, smooth user interactions, and responsive performance.
 
 ## ✨ Features
 
@@ -28,7 +28,7 @@ Built to showcase modern frontend development, responsive web design, user exper
 
 ## 🚀 Live Demo
 
-https://sakura-royale-224208586797.asia-southeast1.run.app
+https://cozy-lights-224208586797.asia-southeast1.run.app
 
 ## 📌 Author
 

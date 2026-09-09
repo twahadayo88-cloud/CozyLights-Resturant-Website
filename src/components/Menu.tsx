@@ -31,16 +31,16 @@ export default function Menu() {
   });
 
   return (
-    <section id="menu" className="py-24 bg-[#0A0A0A] relative border-t border-[#F9F5EE]/10">
+    <section id="menu" className="py-24 bg-[#1A1A1D] relative border-t border-[#F9F5EE]/10">
       {/* Background radial soft burgundy twilight */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#6D0F24]/3 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#6F2232]/3 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-yellow-500 font-serif tracking-[4px] text-[10px] uppercase block mb-3 italic">Immersive Digital Carte</span>
+          <span className="text-[#C3073F] font-serif tracking-[4px] text-[10px] uppercase block mb-3 italic">Immersive Digital Carte</span>
           <h2 className="text-4xl md:text-5xl font-serif text-white uppercase leading-[1.1]">
-            The Imperial Gastronomy <span className="text-yellow-500 font-serif italic normal-case tracking-normal">Menu</span>
+            The Imperial Gastronomy <span className="text-[#C3073F] font-serif italic normal-case tracking-normal">Menu</span>
           </h2>
           <p className="text-neutral-400 max-w-xl mx-auto mt-4 text-xs leading-relaxed opacity-80">
             Feast your eyes upon our masterfully curated cross-overs. Filter by regal categories or search for specific culinary tag combinations.
@@ -48,7 +48,7 @@ export default function Menu() {
         </div>
 
         {/* Filter Controls Bar */}
-        <div className="bg-[#0A0A0A] border border-[#F9F5EE]/10 p-6 rounded-none mb-12 max-w-5xl mx-auto flex flex-col md:flex-row gap-6 justify-between items-center z-10 relative">
+        <div className="bg-[#1A1A1D] border border-[#F9F5EE]/10 p-6 rounded-none mb-12 max-w-5xl mx-auto flex flex-col md:flex-row gap-6 justify-between items-center z-10 relative">
           {/* Category sliders */}
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map((cat) => (
@@ -57,8 +57,8 @@ export default function Menu() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-4 py-2 rounded-none text-[9px] font-mono uppercase tracking-widest transition-all duration-300 cursor-pointer border ${
                   selectedCategory === cat
-                    ? "bg-yellow-500 text-[#0A0A0A] font-semibold border-yellow-500 shadow-[0_0_10px_rgba(255,215,0,0.15)]"
-                    : "bg-neutral-900 border-[#F9F5EE]/10 text-neutral-400 hover:text-white"
+                    ? "bg-[#C3073F] text-[#1A1A1D] font-semibold border-[#C3073F] shadow-[0_0_10px_rgba(195,7,63,0.15)]"
+                    : "bg-[#4E4E50] border-[#F9F5EE]/10 text-neutral-400 hover:text-white"
                 }`}
               >
                 {cat}
@@ -68,14 +68,14 @@ export default function Menu() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto items-center">
             {/* Diet Filter buttons */}
-            <div className="flex bg-neutral-900 p-1 rounded-none border border-[#F9F5EE]/10 shrink-0">
+            <div className="flex bg-[#4E4E50] p-1 rounded-none border border-[#F9F5EE]/10 shrink-0">
               {(["All", "Vegetarian", "Non-Vegetarian"] as const).map((diet) => (
                 <button
                    key={diet}
                    onClick={() => setDietFilter(diet)}
                    className={`px-3 py-1.5 rounded-none text-[9px] font-mono uppercase tracking-wider transition-all cursor-pointer ${
                      dietFilter === diet
-                       ? "bg-yellow-500/10 text-yellow-500 font-semibold"
+                       ? "bg-[#C3073F]/10 text-[#C3073F] font-semibold"
                        : "text-neutral-500 hover:text-neutral-300"
                    }`}
                 >
@@ -91,7 +91,7 @@ export default function Menu() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search wagyu, truffle, matcha..."
-                className="w-full bg-[#0E0E0E] border border-[#F9F5EE]/10 focus:border-yellow-500/50 rounded-none py-2.5 pl-10 pr-4 text-xs text-white placeholder-neutral-500 focus:outline-none transition-colors"
+                className="w-full bg-[#1A1A1D] border border-[#F9F5EE]/10 focus:border-[#C3073F]/50 rounded-none py-2.5 pl-10 pr-4 text-xs text-white placeholder-neutral-500 focus:outline-none transition-colors"
               />
               <Search className="w-3.5 h-3.5 text-neutral-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
             </div>
@@ -104,11 +104,11 @@ export default function Menu() {
             {filteredItems.map((item) => (
               <article
                 key={item.id}
-                className="group relative rounded-none bg-neutral-950/40 border border-[#F9F5EE]/10 hover:border-yellow-500/20 overflow-hidden transition-all duration-500 flex flex-col hover:shadow-[0_15px_35px_rgba(0,0,0,0.8)] cursor-pointer"
+                className="group relative rounded-none bg-[#1A1A1D]/40 border border-[#F9F5EE]/10 hover:border-[#C3073F]/20 overflow-hidden transition-all duration-500 flex flex-col hover:shadow-[0_15px_35px_rgba(0,0,0,0.8)] cursor-pointer"
               >
                 {/* Visual Image container */}
                 <div className="relative h-60 w-full overflow-hidden shrink-0 select-none">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/95 via-[#0A0A0A]/10 to-transparent z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1D]/95 via-[#1A1A1D]/10 to-transparent z-10" />
                   <img
                     src={item.imageUrl}
                     alt={item.name}
@@ -119,14 +119,14 @@ export default function Menu() {
                   {/* Top tags */}
                   <div className="absolute top-4 left-4 z-20 flex flex-col gap-1.5">
                     {item.isVegetarian && (
-                      <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[9px] font-mono tracking-widest uppercase px-2.5 py-1 rounded-none flex items-center gap-1">
+                      <span className="bg-[#6F2232]/10 text-[#C3073F] border border-[#6F2232]/20 text-[9px] font-mono tracking-widest uppercase px-2.5 py-1 rounded-none flex items-center gap-1">
                         <Leaf className="w-2.5 h-2.5" />
                         Vegetarian
                       </span>
                     )}
                     {item.category === "Chef's Specials" && (
-                      <span className="bg-yellow-500/15 text-yellow-400 border border-yellow-500/35 text-[9px] font-mono tracking-widest uppercase px-2.5 py-1 rounded-none flex items-center gap-1">
-                        <Star className="w-2.5 h-2.5 fill-yellow-500/20" />
+                      <span className="bg-[#C3073F]/15 text-[#C3073F] border border-[#C3073F]/35 text-[9px] font-mono tracking-widest uppercase px-2.5 py-1 rounded-none flex items-center gap-1">
+                        <Star className="w-2.5 h-2.5 fill-[#C3073F]/20" />
                         Imperial Star
                       </span>
                     )}
@@ -134,17 +134,17 @@ export default function Menu() {
 
                   {/* Chef badge */}
                   <div className="absolute top-4 right-4 z-20">
-                    <span className="bg-black/80 backdrop-blur-md text-[9px] font-mono text-yellow-500 px-3 py-1 rounded-none border border-yellow-500/20">
+                    <span className="bg-black/80 backdrop-blur-md text-[9px] font-mono text-[#C3073F] px-3 py-1 rounded-none border border-[#C3073F]/20">
                       ${item.price}
                     </span>
                   </div>
                 </div>
 
                 {/* Content Description */}
-                <div className="p-6 flex flex-col flex-grow bg-[#0A0A0A]/40 backdrop-blur-md">
+                <div className="p-6 flex flex-col flex-grow bg-[#1A1A1D]/40 backdrop-blur-md">
                   <div className="flex justify-between items-start gap-4">
                     <div>
-                      <h3 className="text-base font-serif text-white uppercase tracking-wide group-hover:text-yellow-500 transition-colors duration-300">
+                      <h3 className="text-base font-serif text-white uppercase tracking-wide group-hover:text-[#C3073F] transition-colors duration-300">
                         {item.name}
                       </h3>
                       <p className="text-[10px] text-neutral-500 font-mono tracking-wider mt-1">
@@ -161,7 +161,7 @@ export default function Menu() {
                   <div className="border-t border-[#F9F5EE]/10 pt-4 mt-6 flex flex-wrap gap-1.5 justify-between items-center">
                     <div className="flex gap-1">
                       {item.spicyLevel !== undefined && item.spicyLevel > 0 && (
-                        <div className="flex items-center gap-0.5 text-red-500/90 text-[9px] font-mono font-medium tracking-wider">
+                        <div className="flex items-center gap-0.5 text-[#950740]/90 text-[9px] font-mono font-medium tracking-wider">
                           <Flame className="w-3 h-3" />
                           <span>SPICY x{item.spicyLevel}</span>
                         </div>
@@ -172,7 +172,7 @@ export default function Menu() {
                       {item.tags.slice(0, 2).map((tag) => (
                         <span
                           key={tag}
-                          className="text-[9px] font-mono bg-neutral-900 text-neutral-500 border border-[#F9F5EE]/10 px-2 py-0.5 rounded-none uppercase tracking-wider"
+                          className="text-[9px] font-mono bg-[#4E4E50] text-neutral-500 border border-[#F9F5EE]/10 px-2 py-0.5 rounded-none uppercase tracking-wider"
                         >
                           {tag}
                         </span>
@@ -184,8 +184,8 @@ export default function Menu() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-neutral-950/20 border border-[#F9F5EE]/10 rounded-none max-w-2xl mx-auto p-8">
-            <Utensils className="w-8 h-8 text-neutral-600 mx-auto mb-4" />
+          <div className="text-center py-16 bg-[#1A1A1D]/20 border border-[#F9F5EE]/10 rounded-none max-w-2xl mx-auto p-8">
+            <Utensils className="w-8 h-8 text-[#4E4E50] mx-auto mb-4" />
             <h3 className="text-white font-medium text-base uppercase tracking-wider font-serif">Inward Culinary Silence...</h3>
             <p className="text-neutral-500 text-xs mt-2">
               We couldn't find menu choices aligning with those filters. Try searching for "gyoza" or resetting diet preferences.
