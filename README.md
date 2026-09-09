@@ -32,7 +32,5 @@ https://cozy-lights-224208586797.asia-southeast1.run.app
 
 ## 📌 Author
 
-Arnav Sharma
-Computer Science Engineering (Artificial Intelligence)
-
-Passionate about AI, Software Development, Cybersecurity, and creating impactful digital experiences.
+Muhammad Twaha
+Computer Science (Software Development and Maintaince)
