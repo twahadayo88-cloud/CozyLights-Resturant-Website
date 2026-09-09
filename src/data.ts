@@ -73,7 +73,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Spiny lobster clay-oven roasted with Kashmiri chili and Japanese white miso, baked with gruyère-shitake cream and served with truffle-infused saffron jasmine rice.",
     price: 74,
     category: "Main Course",
-    imageUrl: "https://images.unsplash.com/photo-1559742811-82410b510404?auto=format&fit=crop&q=80&w=800",
+    imageUrl: "https://i0.wp.com/themaplecuttingboard.com/wp-content/uploads/2019/11/Termidor.jpeg?resize=1024%2C768&ssl=1",
     tags: ["Royal Grand Special", "Seafood", "Mild Spicy"],
     isVegetarian: false,
     spicyLevel: 2
@@ -111,7 +111,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Fluffy award-winning Uji matcha soufflé infused with gold dust, surrounded by delicate white chocolate cherry blossom branches and rich ruby raspberry dew drops.",
     price: 25,
     category: "Desserts",
-    imageUrl: IMAGES.matchaDessert,
+    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663700665687/TU68iqbefpKgs66W8a23ui/hero-matcha-v3-CHBDwCzpyhiZdFNKs5orVi.webp",
     tags: ["Signature Dessert", "Uji Matcha", "Hot Soufflé"],
     isVegetarian: true,
     spicyLevel: 0

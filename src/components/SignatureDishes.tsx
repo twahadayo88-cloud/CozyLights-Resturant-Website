@@ -11,7 +11,7 @@ export default function SignatureDishes() {
     { 
       name: "The Golden Saffron Ramen", 
       nativeName: "極上サフラン和牛ラーメン", 
-      img: IMAGES.wagyuRamen, 
+      img: "src/assets/images/dish_ramen_1780226896014.png", 
       price: 68, 
       philosophy: "Japanese dashi is cold-infused with Spanish crimson saffron for 72 hours. Plated with paper-thin ribbons of marbled A5 Wagyu and crowned in 24K edible gold sheets.", 
       metrics: ["72h Broth Infusion", "A5 Wagyu Marble Score 12", "Hand-gilded Finish"] 
@@ -19,7 +19,7 @@ export default function SignatureDishes() {
     { 
       name: "Ceremonial Matcha Soufflé", 
       nativeName: "金粉宇治抹茶スフレ", 
-      img: IMAGES.matchaDessert, 
+      img: "src/assets/images/dish_dessert_1780226915206.png", 
       price: 25, 
       philosophy: "A rising hot pastry featuring highest-grade Uji matcha whisked with organic duck eggs. Surrounded by hand-painted white chocolate cozy branches and raspberry nectar droplets.", 
       metrics: ["Ceremonial Uji Matcha", "Duck Egg Rise Formula", "Hand-painted Stems"] 
@@ -27,7 +27,7 @@ export default function SignatureDishes() {
     { 
       name: "Cozy Royal Shimmering Elixir", 
       nativeName: "桜ロワイヤル・カクテル", 
-      img: IMAGES.CozyCocktail, 
+      img: "src/assets/images/dish_cocktail_1780226933463.png", 
       price: 28, 
       philosophy: "Our signature high-end mocktail, featuring pure cherry blossom petals botanical steam, sparkling French bubbles, and suspended particles of gold leaf sliding in dry ice fog.", 
       metrics: ["Botanical Steam Extraction", "Real Petals Infusion", "Lunar Dry Ice Pours"] 
