@@ -11,7 +11,7 @@ export default function SignatureDishes() {
     { 
       name: "The Golden Saffron Ramen", 
       nativeName: "極上サフラン和牛ラーメン", 
-      img: "src/assets/images/dish_ramen_1780226896014.png", 
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD6BPkPvIGQuiMkAd-Chkbz-EuEBnoNM7Ye7X_xoPIbH4zScRZ2_OPKwU&s=10", 
       price: 68, 
       philosophy: "Japanese dashi is cold-infused with Spanish crimson saffron for 72 hours. Plated with paper-thin ribbons of marbled A5 Wagyu and crowned in 24K edible gold sheets.", 
       metrics: ["72h Broth Infusion", "A5 Wagyu Marble Score 12", "Hand-gilded Finish"] 
